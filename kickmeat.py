@@ -49,6 +49,6 @@ def main(proxy_list, url_list, phone_list, kol_vo):
 
 if __name__ == '__main__' :
   main(proxy_list, url_list, phone_list, kol_vo)
-  print("[+]   Времени прошло: " + str(int(now) - int(time())))
+  print("[+]   Времени прошло: " + str(int(time())-int(now)))
 
 

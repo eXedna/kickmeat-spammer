@@ -4,7 +4,7 @@ import requests
 import datetime
 from colorama import Fore
 from time import sleep
-
+from time import time
 now = datetime.datetime.now()
 print(Fore.RED + "\n[*]   Программа запущена в " + str(now.hour) + ":" + str(now.minute) + "\n")
 
@@ -27,6 +27,7 @@ if kol_vo == "":
   kol_vo = default_kol_vo
 else:
   kol_vo = int(kol_vo)
+now = time()
 def main(proxy_list, url_list, phone_list, kol_vo):
   u = 0
   for i in range(kol_vo):
@@ -48,5 +49,6 @@ def main(proxy_list, url_list, phone_list, kol_vo):
 
 if __name__ == '__main__' :
   main(proxy_list, url_list, phone_list, kol_vo)
+  print("[+]   Времени прошло: " + str(int(now) - int(time()))
 
 

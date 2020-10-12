@@ -31,7 +31,7 @@ class phone:
 	def __init__(self):
 		self.path = "nomber.txt"
 	def get_nomber(self):
-		os.system("python generate.py 1200")
+		os.system("python3 generate.py 1200")
 		self.file = open(self.path, "r")
 		self.file_read = self.file.readlines()
 		for i in range(len(self.file_read)):
